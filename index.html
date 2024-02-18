@@ -1,0 +1,32 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic-Tac-Toe with AI</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container" id="startMenu">
+  <h1>Select Your Symbol</h1>
+  <button onclick="startGame('X')">X</button>
+  <button onclick="startGame('O')">O</button>
+</div>
+
+<div class="container" id="game" style="display: none;">
+  <div class="board">
+    <div class="cell" id="cell-0-0" onclick="makeMove(0, 0)"></div>
+    <div class="cell" id="cell-0-1" onclick="makeMove(0, 1)"></div>
+    <div class="cell" id="cell-0-2" onclick="makeMove(0, 2)"></div>
+    <div class="cell" id="cell-1-0" onclick="makeMove(1, 0)"></div>
+    <div class="cell" id="cell-1-1" onclick="makeMove(1, 1)"></div>
+    <div class="cell" id="cell-1-2" onclick="makeMove(1, 2)"></div>
+    <div class="cell" id="cell-2-0" onclick="makeMove(2, 0)"></div>
+    <div class="cell" id="cell-2-1" onclick="makeMove(2, 1)"></div>
+    <div class="cell" id="cell-2-2" onclick="makeMove(2, 2)"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
